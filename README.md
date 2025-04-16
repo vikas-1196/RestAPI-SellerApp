@@ -1,7 +1,7 @@
 #RestFul Api to Get details of Employee
 # For Database connection :
 * first create a database in mysql with name "EmployeeDatabase"
-* User Name password of MySQL should be root:root 
+* tUser Name password test1 of MySQL should be root:root 
 Database connection Established
 
 # Api to fetch Employee Details 
