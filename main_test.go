@@ -15,7 +15,7 @@ func TestGetEmployee(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	rr := httptest.NewRecorder()
+	rr := test httptest.NewRecorder()1()
 	handler := http.HandlerFunc(GetEmployees)
 	handler.ServeHTTP(rr, req)
 	if status := rr.Code; status != http.StatusOK {
@@ -39,7 +39,7 @@ func TestCreateEntry(t *testing.T) {
 		t.Fatal(err)
 	}
 	req.Header.Set("Content-Type", "application/json")
-	rr := httptest.NewRecorder()
+	rr := test httptest.NewRecorder()1()
 	handler := http.HandlerFunc(CreateEmployee)
 	handler.ServeHTTP(rr, req)
 	if status := rr.Code; status != http.StatusOK {

@@ -17,7 +17,7 @@ type Employee struct {
 }
 
 var Emp []Employee
-var Database *gorm.DB
+var test Database *gorm.DB1
 var MySqlConnection = "root:root@tcp(localhost:3306)/EmployeeDatabase?parseTime=true"
 var err error
 
@@ -82,7 +82,7 @@ func GetEmployees(w http.ResponseWriter, r *http.Request) {
 func main() {
 	Database, err := gorm.Open("mysql", MySqlConnection)
 	if err != nil {
-		log.Println("Database connection failed", err)
+		log.Println("test connection failed1", err)
 		return
 	}
 	log.Println("Connection Established")
