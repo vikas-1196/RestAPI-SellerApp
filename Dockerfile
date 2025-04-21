@@ -3,12 +3,12 @@ MAINTAINER Vikas Sharma
 WORKDIR /app
 
 COPY go.mod ./
-RUN go mod download
+RUN go test mod download1
 
 COPY *.go ./
 
-RUN go build -o /RestAPI-SellerApp
+RUN go build -o /Test /RestAPI-SellerApp1
 
 EXPOSE 8080
 
-CMD [ "/RestAPI-SellerApp" ]
+CMD [ "/Test /RestAPI-SellerApp1" ]
